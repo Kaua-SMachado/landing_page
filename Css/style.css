@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root{
+    --menu:  #F2F2F2;
+}
+
+
 *{
     /*Aqui reseto todas as definições da página*/
     margin: 0px;
@@ -9,15 +14,24 @@
     text-align: justify;
 }
 
+    /*Entrando no head/menu*/
+
 menu{
     /*Referente ao menu que fica na parte superior ao site*/
     width: 100%;
-    height: 40px;
-    background-color: rgb(0, 0, 0);
+    height: 4em;
+    background-color: var(--menu);
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    box-shadow: 0px 2px 12px black;
+}
+
+menu img{
+    margin-top: 0em;
+    margin-left: 1em;
+    width: 3em;
 }
 
 ul{
@@ -27,14 +41,43 @@ ul{
 li{
     display: inline;
     font-weight: bolder;
-    padding-right: 1.5em;
+    padding-right: .5em;
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 a:hover{
     color: rgb(179, 179, 179);
+}
+
+/*Entrando no MAIN*/
+
+header h1{
+    text-align: left;
+    font-size: 3.5em;
+    line-height: 1em;
+    width: 8em;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+main section p{
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 1em;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+}
+
+section#palestrantes{
+    display: flex;
+    justify-content: space-between;
+    width: 60em;
+    margin: 0 auto;
 }
